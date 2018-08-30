@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "src\IdentityServer\IdentityServer.csproj", "{F0DF5ACD-6F9C-47A7-8CB7-3351C1C00D6A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\IdentityServer\IdentityServer.csproj", "{F0DF5ACD-6F9C-47A7-8CB7-3351C1C00D6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectedWebAPI", "src\ProtectedWebAPI\ProtectedWebAPI.csproj", "{2EEE036F-FD5C-45A2-9F53-57C2E1562F0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProtectedWebAPI", "src\ProtectedWebAPI\ProtectedWebAPI.csproj", "{2EEE036F-FD5C-45A2-9F53-57C2E1562F0A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{D51A903F-F80A-4033-854A-5E529B315238}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "src\Clients\ConsoleClient\ConsoleClient.csproj", "{770A91F9-F11E-4204-A73E-30B057B27740}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient", "src\Clients\ConsoleClient\ConsoleClient.csproj", "{770A91F9-F11E-4204-A73E-30B057B27740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcClient", "src\clients\MvcClient\MvcClient.csproj", "{4F6C2EF3-DF75-428B-93A8-F2FB3102DDC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MvcClient", "src\clients\MvcClient\MvcClient.csproj", "{4F6C2EF3-DF75-428B-93A8-F2FB3102DDC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactClient", "src\Clients\ReactClient\ReactClient.csproj", "{19CC471D-DFED-408A-AEA1-7EC33BDD2451}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReactClient", "src\Clients\ReactClient\ReactClient.csproj", "{19CC471D-DFED-408A-AEA1-7EC33BDD2451}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProtectedAPI", "ProtectedAPI", "{774EF930-633C-4875-9A47-91DB94672E2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDS4WithASPNetIdentity", "IDS4WithASPNetIdentity\IDS4WithASPNetIdentity.csproj", "{E1149162-5D85-4C09-BD57-AAAACB6DB170}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,11 +45,16 @@ Global
 		{19CC471D-DFED-408A-AEA1-7EC33BDD2451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19CC471D-DFED-408A-AEA1-7EC33BDD2451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19CC471D-DFED-408A-AEA1-7EC33BDD2451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1149162-5D85-4C09-BD57-AAAACB6DB170}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1149162-5D85-4C09-BD57-AAAACB6DB170}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1149162-5D85-4C09-BD57-AAAACB6DB170}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1149162-5D85-4C09-BD57-AAAACB6DB170}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{2EEE036F-FD5C-45A2-9F53-57C2E1562F0A} = {774EF930-633C-4875-9A47-91DB94672E2F}
 		{770A91F9-F11E-4204-A73E-30B057B27740} = {D51A903F-F80A-4033-854A-5E529B315238}
 		{4F6C2EF3-DF75-428B-93A8-F2FB3102DDC6} = {D51A903F-F80A-4033-854A-5E529B315238}
 		{19CC471D-DFED-408A-AEA1-7EC33BDD2451} = {D51A903F-F80A-4033-854A-5E529B315238}

@@ -39,26 +39,6 @@ namespace ReactClient
                 });
 
 
-            //services.AddAuthentication(options =>
-            //{
-            //    options.DefaultScheme = "Cookies";
-            //    options.DefaultChallengeScheme = "oidc";
-            //})
-            //.AddCookie("Cookies")
-            //.AddOpenIdConnect("oidc", options =>
-            //{
-            //    options.SignInScheme = "Cookies";
-            //    options.Authority = "http://localhost:5000";
-
-            //    options.RequireHttpsMetadata = false; // just for development
-            //    options.ClientId = "react";
-            //    options.ClientSecret = "secret";
-            //    options.ResponseType = "code id_token";
-
-            //    options.SaveTokens = true;
-            //    options.GetClaimsFromUserInfoEndpoint = true;
-            //});
-
             // In production, the React files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
@@ -93,18 +73,6 @@ namespace ReactClient
                     name: "default",
                     template: "{controller}/{action=Index}/{id?}");
             });
-
-            //app.Use(async (context, next) =>
-            //{
-            //    if (!context.User.Identity.IsAuthenticated)
-            //    {
-            //        await context.ChallengeAsync();
-            //    }
-            //    else
-            //    {
-            //        await next();
-            //    }
-            //});
 
             app.UseSpa(spa =>
             {
